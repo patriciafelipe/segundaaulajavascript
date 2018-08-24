@@ -17,5 +17,5 @@ function elementoOcultar(){
 	document.getElementById("demo").style.display="block";
 }
 function calcular(){
-	document.getElementById("demo").innerHTML = 10 + 5;;
+	document.getElementById("demo").innerHTML = document.getElementById("num1").value * document.getElementById("num2").value;
 }
