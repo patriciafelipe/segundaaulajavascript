@@ -7,11 +7,11 @@
 	</head>
 	<body>
 		<form action="">
-			Nome:<br><input type="text" name="nome" value=""><br>
-			Sobrenome:<br><input type="text" name="sobrenome" value=""><br>
+			Nome:<br><input type="text" name="nome" value="" size="35" pattern="[a-z\s]+$" required="yes"><br>
+			Sobrenome:<br><input type="text" name="sobrenome" value="" size="35" pattern="[a-z\s]+$" required="yes"><br>
 			Sexo: Masculino<input type="radio" name="sexo" value="masculino"> Feminino<input type="radio" name="sexo" value="feminino"><br>
 			Qual o ano do seu nascimento?
-			<input type="button" id="btnCarregar" onclick="ano()" value="Carregar combobox" />
+			<input type="button" id="btnCarregar" onclick="ano()" value="Carregar combobox">
 			<select name="data_nasc" id="data_nasc">
 			</select><br>
 			Qual a data do seu aniversário?<br>
@@ -20,7 +20,7 @@
 			<input type="checkbox" name="chocolate" value="chocolate">Chocolate<br>
 			<input type="checkbox" name="refrigerante" value="refrigerante">Refrigerante<br>
 			Digite o seu email:<br>
-			<input type="email" name="email"><br>
+			<input type="email" name="email" size="35" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="yes"><br>
 			Digite uma mensagem:<br>
 			<textarea name="message" rows="10" cols="30"></textarea><br>
 			<input type="submit" value="Enviar">
